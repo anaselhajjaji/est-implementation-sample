@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+
+  est-server: 
+    build: ./est-server
+    ports:
+      - 8443:8443
+  
+  est-client-getca: 
+    build: ./est-client-getca
+    depends_on: 
+      - est-server
