@@ -11,8 +11,3 @@ services:
   #  build: ./est-csharp-client
   #  depends_on: 
   #    - est-server
-
-  est-client-getca: 
-    build: ./est-client-getca
-    depends_on: 
-      - est-server
