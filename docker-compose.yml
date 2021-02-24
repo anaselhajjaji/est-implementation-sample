@@ -7,12 +7,12 @@ services:
     ports:
       - 8443:8443
   
-  est-csharp-client: 
-    build: ./est-csharp-client
-    depends_on: 
-      - est-server
-
-  #est-client-getca: 
-  #  build: ./est-client-getca
+  #est-csharp-client: 
+  #  build: ./est-csharp-client
   #  depends_on: 
   #    - est-server
+
+  est-client-getca: 
+    build: ./est-client-getca
+    depends_on: 
+      - est-server
